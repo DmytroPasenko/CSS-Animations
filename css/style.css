@@ -25,3 +25,76 @@ body {
 .box-image img {
     height: 300px;
 }
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container::before, .container::after {
+    content: ' ';
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #DB6814;
+}
+
+.container::before {
+    transform: translateX(-125%) rotate(45deg);
+}
+
+.container::after {
+    transform: translateX(195%) rotate(45deg);
+}
+
+.text {
+    position: absolute;
+    top: 20%;
+    color: #ffffff;
+    text-align: center;
+}
+
+.text h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    transform: scale(0);
+    transition: .5s;
+}
+
+.text p {
+    font-size: 18px;
+    margin: 0 100px;
+    text-align: justify;
+    transform: scale(2);
+    transition: .5s;
+    opacity: 0;
+}
+
+a.button {
+    position: absolute;
+    top: 100%;
+    left: 37%;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid #ffffff;
+    padding: 18px 30px;
+    border-radius: 8px;
+    transition: .2s ease-in-out;
+}
+
+a.button::before {
+    content: ' ';
+    position: absolute;
+    top: 0px;
+    left: -75px;
+    height: 50px;
+    width: 50px;
+    background: linear-gradient(90deg, rgba(255,255,255,1), rgba(255,255,255,.5));
+    transform: skewX(-45deg);
+}
