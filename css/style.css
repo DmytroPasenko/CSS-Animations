@@ -14,7 +14,7 @@ section {
 }
 
 .dws-wrapper {
-    margin: 75px 0 75px 0;
+    margin: 75px 0 0 0;
 }
 
 .box-image {
@@ -158,5 +158,53 @@ a.barber-button:active {
 /* Passionate Julia */
 
 .julia-text {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+.julia-h {
+    display: flex;
+    flex-direction: row;
+}
+
+.julia-h h1 {
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-size: 24pt;
+    transform: scale(1, .9);
+}
+
+.julia-h-1 {
+    font-weight: 400;
+}
+
+.julia-p div {
+    padding: 3px 7px 3px 7px;
+    background-color: #ffffff;
+    margin: 5px 0 5px 0;
+}
+
+.julia-p div p {
+    font-size: 18px;
+    color: #74777b;
+    transform: scale(1, .9);
+}
+
+.julia-p-1 {
+    width: 240px;
+}
+
+.julia-p-2 {
+    width: 265px;
+}
+
+.julia-p-3 {
+    width: 245px;
+}
+
+footer {
+    margin-top: 75px;
 }
