@@ -157,6 +157,10 @@ a.barber-button:active {
 
 /* Passionate Julia */
 
+.julia-img {
+    transition: .3s;
+}
+
 .julia-text {
     position: absolute;
     top: 15%;
@@ -181,6 +185,10 @@ a.barber-button:active {
     font-weight: 400;
 }
 
+.julia-p {
+    position: absolute;
+}
+
 .julia-p div {
     padding: 3px 7px 3px 7px;
     background-color: #ffffff;
@@ -194,16 +202,48 @@ a.barber-button:active {
 }
 
 .julia-p-1 {
-    width: 240px;
+    width: 240px;    
+    position: absolute;
+    left: -370px; 
+    transition: .3s;
 }
 
 .julia-p-2 {
     width: 265px;
+    position: absolute;
+    top: 35px;
+    left: -370px;
+    transition: .4s;
 }
 
 .julia-p-3 {
     width: 245px;
+    position: absolute;
+    top: 70px;
+    left: -370px;
+    transition: .5s;
 }
+
+.box-image:hover .julia-img {
+    transform: scale(1.2);
+    filter: brightness(40%);
+}
+
+.julia-container:hover .julia-p-1{
+    left: 0;
+}
+
+.julia-container:hover .julia-p-2{
+    left: 0;
+}
+
+.julia-container:hover .julia-p-3{
+    left: 0;
+}
+
+/* Anything */
+
+/* Footer */
 
 footer {
     margin-top: 75px;
