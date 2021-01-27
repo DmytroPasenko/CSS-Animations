@@ -241,6 +241,62 @@ a.barber-button:active {
     left: 0;
 }
 
+/* Goliath */
+
+.goliath-img {
+    width: 500px;
+    transition: .1s;
+}
+
+.goliath-text {
+    position: absolute;
+    top: 80%;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.goliath-h {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 25px 20px;
+    transition: .505s;
+}
+
+.goliath-h h1 {
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-size: 24pt;
+    transform: scale(1, .9);
+}
+
+.goliath-h-1 {
+    font-weight: 400;
+}
+
+.goliath-p {
+    position: absolute;
+    left: 0;
+    width: 500px;
+    padding: 20px 0 20px 0;
+    background-color: tomato;
+    text-align: center;
+    font-size: 18px;
+    transition: .5s;
+}
+
+.box-image:hover .goliath-img {
+    margin-top: -55px;
+}
+
+.goliath-container:hover .goliath-h {
+    margin-top: -65px;
+    margin-bottom: 15px;
+}
+
+.goliath-container:hover .goliath-p {
+    margin-top: 15px;
+}
+
 /* Anything */
 
 /* Footer */
