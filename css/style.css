@@ -7,11 +7,14 @@ body {
     background: url('../img/background.jpg');
 }
 
+section {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
 .dws-wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 75px 0 75px 0;
 }
 
 .box-image {
@@ -28,6 +31,8 @@ body {
     transition: .5s;
 }
 
+/* BarberShop */
+
 .container {
     width: 100%;
     height: 100%;
@@ -36,7 +41,7 @@ body {
     left: 0;
 }
 
-.container::before, .container::after {
+.barber-container::before, .barber-container::after {
     content: ' ';
     height: 300px;
     width: 300px;
@@ -48,15 +53,15 @@ body {
     transition: .1s;
 }
 
-.container::before {
+.barber-container::before {
     transform: translateX(-125%) rotate(45deg);
 }
 
-.container::after {
+.barber-container::after {
     transform: translateX(195%) rotate(45deg);
 }
 
-.text {
+.barber-text {
     position: absolute;
     top: 20%;
     color: #ffffff;
@@ -64,14 +69,14 @@ body {
     z-index: 10;
 }
 
-.text h1 {
+.barber-text h1 {
     margin-bottom: 20px;
     font-size: 30px;
     transform: scale(0);
     transition: .5s;
 }
 
-.text p {
+.barber-text p {
     font-size: 18px;
     margin: 0 100px;
     text-align: justify;
@@ -80,7 +85,7 @@ body {
     opacity: 0;
 }
 
-a.button {
+a.barber-button {
     position: absolute;
     top: 105%;
     left: 37%;
@@ -95,7 +100,7 @@ a.button {
     overflow: hidden;
 }
 
-a.button::before {
+a.barber-button::before {
     content: ' ';
     position: absolute;
     top: 0px;
@@ -106,46 +111,52 @@ a.button::before {
     transform: skewX(-45deg);
 }
 
-a.button:hover::before {
+a.barber-button:hover::before {
     left: 170px;
     transition: .5s ease-in-out;
 }
 
-a.button:active {
+a.barber-button:active {
     border: 2px solid #b3b3b3;
 }
 
-.box-image:hover img {
+.box-image:hover .barber-img {
     transform: rotate(30deg) scale(2);
     filter: blur(2px);
 }
 
-.box-image:hover .container::before {
+.box-image:hover .barber-container::before {
     transform: translateX(92%) rotate(45deg) scale(2);
     transition: .5s;
     opacity: .6;
 }
 
-.box-image:hover .container::after {
+.box-image:hover .barber-container::after {
     transform: translateX(-25%) rotate(45deg) scale(2);
     transition: .5s;
     opacity: .6;
 }
 
-.box-image:hover .text h1 {
+.box-image:hover .barber-text .barber-h {
     transform: scale(1);
 }
 
-.box-image:hover .text p {
+.box-image:hover .barber-text .barber-p {
     transform: scale(1);
     opacity: 1;
 }
 
-.box-image:hover a.button {
+.box-image:hover a.barber-button {
     opacity: 1;
     transition: .5s;
 }
 
 .box-image:hover {
     border: 5px inset #373733;
+}
+
+/* Passionate Julia */
+
+.julia-text {
+
 }
