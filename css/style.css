@@ -331,6 +331,7 @@ a.barber-button:active {
     position: absolute;
     right: 0;
     bottom: 0;
+    margin-bottom: -50px;
 }
 
 .jolly-links img {
@@ -340,14 +341,45 @@ a.barber-button:active {
     opacity: .8;
 }
 
-.jolly-container::before, .jolly-container::after {
+.jolly-container::before {
     content: ' ';
-    height: 300px;
-    width: 500px;
+    height: 700px;
+    width: 700px;
     position: absolute;
     background-color: #ffffff;
     top: 100%;
     opacity: .6;
+    transition: .3s;
+}
+
+.jolly-img-1 {
+    transition: .3s;
+}
+
+.jolly-img-2 {
+    transition: .2s;
+}
+
+.jolly-img-3 {
+    transition: .1s;
+}
+
+.box-image:hover .jolly-img {
+    transform: scale(1.2);
+    filter: brightness(70%);
+}
+
+.box-image:hover .jolly-container::before {
+    transform: rotate(-15deg);
+    top: 73%;
+}
+
+.box-image:hover .jolly-links img{
+    margin-bottom: 85px;
+}
+
+.jolly-links img:hover {
+    opacity: .5;
 }
 
 /* Footer */
