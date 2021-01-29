@@ -449,6 +449,10 @@ a.barber-button:active {
     transform: rotate(45deg) scale(1);
 }
 
+.tender-img-1:hover, .tender-img-2:hover, .tender-img-3:hover, .tender-img-4:hover {
+    filter: invert(.7);
+}
+
 .box-image:hover .tender-links img {
     opacity: 1;
     margin: 15px;
@@ -500,7 +504,7 @@ a.barber-button:active {
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
-    top: 24.5%;
+    top: 24%;
     left: 20%;
     opacity: 0;
     transition: .3s;
@@ -532,6 +536,94 @@ a.barber-button:active {
 .box-image:hover .selena-text {
     top: 12%;
 }
+
+/* Terry */
+
+.terry-img {
+    width: 500px;
+    height: auto;
+}
+
+.terry-text {
+    position: absolute;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    right: 5%;
+    bottom: 5%;
+    transition: .6s;
+}
+
+.terry-h {
+    display: flex;
+    flex-direction: row; 
+}
+
+.terry-h h1 {
+    margin-right: 5px;
+    text-transform: uppercase;
+    font-size: 24pt;
+    transform: scale(1, .9);
+}
+
+.terry-h-1 {
+    font-weight: 400;
+}
+
+.terry-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: -10%;
+    top: 5%;
+    transition: .6s;
+}
+
+.terry-img {
+    transition: .6s;
+}
+
+.terry-links img {
+    width: 20px;
+    height: auto;
+    filter: brightness(0) invert(1);
+    margin: 10px;
+}
+
+.terry-img-1:hover, .terry-img-2:hover, .terry-img-3:hover, .terry-img-4:hover {
+    filter: invert(100%) sepia() saturate(10000%) hue-rotate(0deg);
+}
+
+.terry-container::before {
+    content: ' ';
+    height: 300px;
+    width: 500px;
+    position: absolute;
+    transition: .6s;
+    top: 25px;
+    left: 25px;
+}
+
+.box-image:hover .terry-container::before {
+    height: 210px;
+    width: 410px;
+    box-shadow: -25px -25px 0px 90px black;
+    top: 25px;
+    left: 25px;
+}
+
+.box-image:hover .terry-text {
+    right: 50%;
+}
+
+.box-image:hover .terry-links {
+    right: 2.5%;
+}
+
+.box-image:hover .terry-img {
+    opacity: .95;
+}
+
+/*  */
 
 /* Footer */
 
