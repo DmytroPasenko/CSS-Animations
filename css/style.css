@@ -470,8 +470,9 @@ a.barber-button:active {
     position: absolute;
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
-    top: 10%;
+    top: 20%;
     left: 25%;
+    transition: .3s;
 }
 
 .selena-h {
@@ -499,8 +500,37 @@ a.barber-button:active {
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
-    top: 14.5%;
+    top: 24.5%;
     left: 20%;
+    opacity: 0;
+    transition: .3s;
+}
+
+.selena-container::before {
+    content: ' ';
+    height: 300px;
+    width: 500px;
+    position: absolute;
+    outline: 0px solid #ffffff;
+    transition: .3s;
+    top: 0px;
+    left: 0px;
+}
+
+.box-image:hover .selena-container::before {
+    outline: 10px solid #ffffff;
+    height: 280px;
+    width: 480px;
+    top: 10px;
+    left: 10px;
+}
+
+.box-image:hover .selena-h2 {
+    opacity: 1;
+}
+
+.box-image:hover .selena-text {
+    top: 12%;
 }
 
 /* Footer */
