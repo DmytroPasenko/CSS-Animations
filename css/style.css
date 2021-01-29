@@ -388,12 +388,13 @@ a.barber-button:active {
     position: absolute;
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
+    top: 45%;
+    left: 25%;
 }
 
 .tender-h {
     display: flex;
-    flex-direction: row;    
-    text-align: center;
+    flex-direction: row;   
 }
 
 .tender-h h1 {
@@ -407,6 +408,31 @@ a.barber-button:active {
     font-weight: 400;
 }
 
+.tender-links {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -25px;
+    margin-left: 75px;
+}
+
+.tender-links img {
+    height: 25px;
+    width: 25px;
+    margin: 75px;
+    filter: brightness(0) invert(1);
+}
+
+.tender-container::before {
+    content: ' ';
+    position: absolute;
+    width: 175px;
+    height: 175px;
+    border: 3px solid #ffffff;
+    transform: rotate(45deg);
+    top: 20%;
+    left: 32%;
+}
 
 /* Footer */
 
